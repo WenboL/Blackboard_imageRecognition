@@ -21,7 +21,9 @@ public class Agent_output {
 		}
 		DecimalFormat df = new DecimalFormat("#.##");      
 		cost = Double.valueOf(df.format(cost));
+		UI_Window frame = new UI_Window("The basket", 960, 480, blackboard, cost);
 		System.out.println("Total cost is: $"+ cost);
+		
 		
 	}	
 

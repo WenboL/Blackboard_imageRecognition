@@ -1,24 +1,30 @@
 package CAS703.Blackboard.FruitRecongnition;
 
+import java.util.ArrayList;
+
 public class KnowledgeSource{
 
 	BlackBoard blackBoard =new BlackBoard();
 	
 	//Initialize Agents Add new agent here
 	Input input;
-	Agent_pixel pixel;
+	Agent_Pixel pixel;
 	Agent_RGB rgb;
 	Agent_ResultChecker checker;
 	
 	public void run(BlackBoard blackboard){
 		//add new agent here
-		input =new Input();
-		pixel =new Agent_pixel();
+//		input =new Input();
+		pixel =new Agent_Pixel();
 		rgb = new Agent_RGB();
 		checker = new Agent_ResultChecker();
-		
-		for (int i=0; i<9; i++){
-			input.run(blackBoard);			  
+		int j = blackboard.getFruitNumber();
+		for (int i=0; i<j; i++){
+
+			ArrayList<String> imgs = blackboard.getImagelists();
+			String img = imgs.get(i);
+			blackboard.setImg(img);
+			//input.run(blackBoard);			
 			pixel.run(blackBoard);
 			rgb.run(blackBoard);
 			checker.run(blackBoard);

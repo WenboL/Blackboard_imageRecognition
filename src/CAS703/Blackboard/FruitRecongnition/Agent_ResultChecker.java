@@ -18,6 +18,7 @@ public class Agent_ResultChecker {
 	public void run(BlackBoard blackboard) {
 		String pixelResult = blackboard.getPixelResult();
 		String rgb = blackboard.getRGBResult();
+		
 		ArrayList<String> identifiedFruits = blackboard.getIdentifiedFruits();
 		identifiedFruits.add(identifier(pixelResult, rgb));
 		blackboard.setIdentifiedFruits(identifiedFruits);

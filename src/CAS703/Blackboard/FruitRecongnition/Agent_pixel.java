@@ -5,7 +5,7 @@ import java.io.File;
 import javax.imageio.ImageIO;
 
 
-public class Agent_pixel {
+public class Agent_Pixel {
 	
 		public static String[][] getPX(String args) {
 			int[] rgb = new int[3];

@@ -22,9 +22,9 @@ public class Input{
 		  }
 		  //send back to blackboard the current img add to the input image list
 		  blackboard.setImg(img);
-		  ArrayList<Integer> imagelist = blackboard.getImagelists();
+		  ArrayList<Integer> imagelist = blackboard.getImagelist();
 		  imagelist.add(n);
-		  blackboard.setImagelists(imagelist);
+		  blackboard.setImagelist(imagelist);
 	 }
 	
 
