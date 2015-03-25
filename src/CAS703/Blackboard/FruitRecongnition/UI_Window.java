@@ -45,7 +45,7 @@ public class UI_Window extends JFrame{
 	}
 
 	public void paint(Graphics g){
-		g.setFont(new Font("Arial",Font.BOLD,34));
+		g.setFont(new Font("Arial",Font.PLAIN,18));
 		g.drawString("These are the fruits system recongnized: ", 10, 80);
 		g.drawString(""+inputs, 10, 110);
 		g.drawString("Apple - $0.5/each, Banana - $0.7/each, Total cost: $"+ cost, 10, 300);
