@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<main:Main_Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:main="main" xsi:schemaLocation="main MetaModel.ecore">
+  <ClassBelongsTo name="SystemClass1"/>
+  <ClassBelongsTo name="Agent1" input=""/>
+  <BlackboardBelongsTo/>
+  <KnowledgeSourceBelongsTo/>
+</main:Main_Container>

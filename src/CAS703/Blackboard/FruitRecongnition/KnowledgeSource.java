@@ -1,3 +1,11 @@
+/**
+ * Created by Wenbo Liu on 05-03-20.
+ * For class CAS 703 term project, McMaster University
+ * Project name: Fruit Recognition with Blackboard Architecture
+ * File: KnowledgeSource.java
+ * This file is the knowledge source management file that will call all the agents one by one 
+ * Used blackboard value: getFruitNumber, getImagelists,
+ */
 package CAS703.Blackboard.FruitRecongnition;
 
 import java.util.ArrayList;
@@ -7,7 +15,7 @@ public class KnowledgeSource{
 	BlackBoard blackBoard =new BlackBoard();
 	
 	//Initialize Agents Add new agent here
-	Input input;
+	InputGenerator input;
 	Agent_Pixel pixel;
 	Agent_RGB rgb;
 	Agent_ResultChecker checker;

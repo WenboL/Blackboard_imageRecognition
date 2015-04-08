@@ -1,16 +1,28 @@
+/**
+ * Created by Wenbo Liu on 05-03-20.
+ * For class CAS 703 term project, McMaster University
+ * Project name: Fruit Recognition with Blackboard Architecture
+ * File: Agent_Pixel.java
+ * In this file, it will obtain the value for each pixel, each image.
+ * Then compare the image with stored value to see if there is a match.
+ * It will give out the matching percentage then compare them, give out the highest percentage result.
+ * Used blackboard value: getImg, setPixelResult
+ */
 package CAS703.Blackboard.FruitRecongnition;
 import java.awt.image.BufferedImage;
-import java.io.File;
+import java.net.URL;
 
 import javax.imageio.ImageIO;
 
 
 public class Agent_Pixel {
 	
+		//Get pixel value or rgb value for each pixel
 		public static String[][] getPX(String args) {
 			int[] rgb = new int[3];
-
-			File file = new File(args);
+			URL file = ClassLoader.getSystemResource(args);
+			//File file = new File(args);
+			//System.out.println(file);
 			BufferedImage bi = null;
 			try {
 				bi = ImageIO.read(file);
@@ -37,8 +49,8 @@ public class Agent_Pixel {
 
 		}
 		
+		//Comparing the graph's pixel value with stored value, then give out the matching percentage.		
 		public String comparing(String[][] list1, String[][] list2){
-
 			int Match = 0;
 			int NotMatch = 0;
 			int i = 0, j = 0;
@@ -100,10 +112,14 @@ public class Agent_Pixel {
 			return Percent;
 			
 		}
+		
+		//Compares the input image with the stored image, the container for whole comparing process
 		public String compareImage(String imgPath1){
-			String basePath = new File("").getAbsolutePath();
-			String imgApple =  basePath + "/res/apple.jpg";
-			String imgBanana = basePath + "/res/banana.jpg";
+//			String basePath = new File("").getAbsolutePath();
+//			String imgApple =  basePath + "/res/apple.jpg";
+//			String imgBanana = basePath + "/res/banana.jpg";
+			String imgApple = "apple.jpg";
+			String imgBanana = "banana.jpg";
 			String[] images = {imgPath1, imgApple, imgBanana};
 			if (images.length == 0) {
 				System.out.println("No imagefile selected");
@@ -124,7 +140,7 @@ public class Agent_Pixel {
 				ThisFruit = "apple";
 			}else ThisFruit = "banana";
 
-			System.out.println("PixelValue detection: "+ThisFruit);
+			System.out.println("PixelValue detection: "+ThisFruit+" applecomparsion: "+value1+" bananacomparsion: "+value2);
 			return ThisFruit;
 		}
 		

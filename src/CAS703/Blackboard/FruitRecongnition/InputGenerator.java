@@ -1,10 +1,18 @@
+/**
+ * Created by Wenbo Liu.
+ * For class CAS 703 term project, McMaster University
+ * Project name: Fruit Recognition with Blackboard Architecture
+ * File: InputGenerator.java
+ * In this file, it will randomly generate the inpput image for user
+ * Used blackboard value: getImagelist, setImagelist, setImg
+ */
 package CAS703.Blackboard.FruitRecongnition;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
 
 
-public class Input{
+public class InputGenerator{
 	//random the image number then select image as a new input
 	public void run(BlackBoard blackboard) {
 		  String basePath = new File("").getAbsolutePath();

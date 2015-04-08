@@ -1,0 +1,37 @@
+@namespace(uri="main", prefix="main")
+package main;
+
+class Main_Container {
+  val Class[*] ClassBelongsTo;
+  val Blackboard BlackboardBelongsTo;
+  val KnowledgeSource KnowledgeSourceBelongsTo;
+}
+
+class Class {
+  attr String name;
+  attr String input;
+  attr String result;
+  attr String source;
+  ref Agent[*] isAgent;
+  ref systemClass[*] isSystemClass;
+}
+
+class Blackboard {
+  attr String name;
+  attr int FruitNumber;
+  attr String img;
+  attr String pixelResult;
+  attr String rgbResult;
+  attr String imageLists;
+}
+
+class KnowledgeSource {
+  ref Agent[*] Has;
+}
+
+class Agent {
+}
+
+class systemClass {
+}
+

@@ -1,3 +1,10 @@
+/**
+ * Created by Wenbo Liu on 15-03-20.
+ * For class CAS 703 term project, McMaster University
+ * Project name: Fruit Recognition with Blackboard Architecture
+ * This file is the entry to start the program, currently only calls the main UI window "FirstWindow"
+ */
+
 package CAS703.Blackboard.FruitRecongnition;
 
 //import java.util.LinkedList;
@@ -5,7 +12,8 @@ package CAS703.Blackboard.FruitRecongnition;
 
 public class Start {
 	
-	FirstWindow openwindow;
+	MainWindow openwindow;
+	Agent_ImageSource loadImageSource;
 	
 //	BlackBoard blackBoard =new BlackBoard();
 ////	List<KnowledgeSource> sourceList =new LinkedList<KnowledgeSource>();
@@ -21,8 +29,11 @@ public class Start {
 //	}
 	
 	public Start(){
-		openwindow = new FirstWindow();
+		openwindow = new MainWindow();
+
 		openwindow.run();
+		
+		
 
 	}
 		

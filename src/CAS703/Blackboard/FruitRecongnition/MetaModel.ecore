@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="main" nsURI="main" nsPrefix="main">
+  <eClassifiers xsi:type="ecore:EClass" name="Main_Container">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ClassBelongsTo" upperBound="-1"
+        eType="#//Class" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="BlackboardBelongsTo" eType="#//Blackboard"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="KnowledgeSourceBelongsTo"
+        eType="#//KnowledgeSource" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Class">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="input" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="result" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isAgent" upperBound="-1"
+        eType="#//Agent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isSystemClass" upperBound="-1"
+        eType="#//systemClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Blackboard">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="FruitNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="img" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pixelResult" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rgbResult" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageLists" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="KnowledgeSource">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Has" upperBound="-1" eType="#//Agent"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Agent"/>
+  <eClassifiers xsi:type="ecore:EClass" name="systemClass"/>
+</ecore:EPackage>
