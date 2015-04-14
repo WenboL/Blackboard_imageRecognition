@@ -39,6 +39,9 @@ public class BlackBoard {
 	//iconAddress contains the path to all the available image icons
 	static private ArrayList<String> iconAddress = new ArrayList<String>() ;	
 	
+	//bitmapResult is the identified result from Agent FastBitmap
+	static private String bitmapResult = null;
+	
 	
 	
 	public String getImg() {
@@ -52,6 +55,9 @@ public class BlackBoard {
 	}
 	public String getRGBResult() {
 		return BlackBoard.rgbResult;
+	}
+	public String getBitmapResult(){
+		return BlackBoard.bitmapResult;
 	}
 	public Integer getFruitNumber() {
 		return BlackBoard.fruitNumber;
@@ -131,5 +137,13 @@ public class BlackBoard {
 	//used in Agent_ImageSource 
 	public synchronized void setIconAddress(ArrayList<String> iconAddress) {
 		BlackBoard.iconAddress = iconAddress;
+	}
+	
+	//bitmapResult contains the answer from agent FastBitmap
+	//used in Agent_FastBitmap
+	public void setFastBitMapResult(String FastBitMapResult) {
+		// TODO Auto-generated method stub
+		BlackBoard.bitmapResult = FastBitMapResult;
+		
 	}
 }

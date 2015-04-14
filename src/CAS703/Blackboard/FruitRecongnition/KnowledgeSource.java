@@ -19,6 +19,7 @@ public class KnowledgeSource{
 	Agent_Pixel pixel;
 	Agent_RGB rgb;
 	Agent_ResultChecker checker;
+	Agent_FastBitmap bitmap;
 	
 	public void run(BlackBoard blackboard){
 		//add new agent here
@@ -26,6 +27,8 @@ public class KnowledgeSource{
 		pixel =new Agent_Pixel();
 		rgb = new Agent_RGB();
 		checker = new Agent_ResultChecker();
+		bitmap = new Agent_FastBitmap();
+		
 		int j = blackboard.getFruitNumber();
 		for (int i=0; i<j; i++){
 
@@ -35,7 +38,9 @@ public class KnowledgeSource{
 			//input.run(blackBoard);			
 			pixel.run(blackBoard);
 			rgb.run(blackBoard);
+			bitmap.run(blackboard);
 			checker.run(blackBoard);
+			
 			
 		}
 	}

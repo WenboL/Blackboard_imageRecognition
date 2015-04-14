@@ -26,6 +26,8 @@ public class Agent_ResultChecker {
 	
 	public String identifier(String[] results, int number){
 		String result = "";
+		int apple=0;
+		int banana=0;
 		
 		for (int i=0; i<number; i++){
 				if (results[0] == results[i]){
@@ -39,16 +41,17 @@ public class Agent_ResultChecker {
 	//update blackboard with the final answer to identified fruits list
 	public void run(BlackBoard blackboard) {
 		//update this number by adding 1 for adding new agents.
-		int agentNumber = 2;
+		int agentNumber = 3;
 		String[] results=new String[agentNumber];
 		
 		//add new agent's answer grabber below
 		String pixelResult = blackboard.getPixelResult();
 		String rgb = blackboard.getRGBResult();
+		String bitmap = blackboard.getBitmapResult();
 		//add new agent's answer to results
 		results[0] = pixelResult;
 		results[1] = rgb;
-		
+		results[2] = bitmap;
 		
 		
 		ArrayList<String> identifiedFruits = blackboard.getIdentifiedFruits();

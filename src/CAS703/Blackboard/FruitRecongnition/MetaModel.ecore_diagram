@@ -5,21 +5,44 @@
     <children xmi:type="notation:BasicCompartment" xmi:id="_D0xD8dccEeSEYsY_K5idRA" type="7001">
       <styles xmi:type="notation:SortingStyle" xmi:id="_D0xD8tccEeSEYsY_K5idRA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xD89ccEeSEYsY_K5idRA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_OGXjoN9AEeSkUokocJm_AQ" value="0.23076923076923078"/>
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_D0xD9NccEeSEYsY_K5idRA" type="7002">
       <styles xmi:type="notation:SortingStyle" xmi:id="_D0xD9dccEeSEYsY_K5idRA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xD9tccEeSEYsY_K5idRA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_OGccIN9AEeSkUokocJm_AQ" value="0.23076923076923078"/>
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_D0xD99ccEeSEYsY_K5idRA" type="7003">
       <styles xmi:type="notation:SortingStyle" xmi:id="_D0xD-NccEeSEYsY_K5idRA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xD-dccEeSEYsY_K5idRA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_OGccId9AEeSkUokocJm_AQ" value="0.23076923076923078"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//Main_Container"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0wc4dccEeSEYsY_K5idRA" x="175"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0wc4dccEeSEYsY_K5idRA" x="351" y="90"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_D0xD-tccEeSEYsY_K5idRA" type="2001" fontName=".Helvetica Neue DeskInterface">
     <children xmi:type="notation:DecorationNode" xmi:id="_D0xrANccEeSEYsY_K5idRA" type="5001"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_D0xrAdccEeSEYsY_K5idRA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_9Bwi0N7hEeSBjdk8XOoraQ" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaModel.ecore#//Class/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9Bwi0d7hEeSBjdk8XOoraQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_9BxJ4N7hEeSBjdk8XOoraQ" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaModel.ecore#//Class/input"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9BxJ4d7hEeSBjdk8XOoraQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_9BxJ4t7hEeSBjdk8XOoraQ" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaModel.ecore#//Class/result"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9BxJ497hEeSBjdk8XOoraQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_9BxJ5N7hEeSBjdk8XOoraQ" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaModel.ecore#//Class/source"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_9BxJ5d7hEeSBjdk8XOoraQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Lxj_IN7iEeSBjdk8XOoraQ" type="3001">
+        <element xmi:type="ecore:EAttribute" href="MetaModel.ecore#//Class/run"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Lxj_Id7iEeSBjdk8XOoraQ"/>
+      </children>
       <styles xmi:type="notation:SortingStyle" xmi:id="_D0xrAtccEeSEYsY_K5idRA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xrA9ccEeSEYsY_K5idRA"/>
     </children>
@@ -32,7 +55,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xrCdccEeSEYsY_K5idRA"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//Class"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0xD-9ccEeSEYsY_K5idRA" y="112"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0xD-9ccEeSEYsY_K5idRA" x="176" y="202"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_D0xrCtccEeSEYsY_K5idRA" type="2001" fontName=".Helvetica Neue DeskInterface">
     <children xmi:type="notation:DecorationNode" xmi:id="_D0xrDNccEeSEYsY_K5idRA" type="5001"/>
@@ -49,7 +72,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0xrFdccEeSEYsY_K5idRA"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//Blackboard"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0xrC9ccEeSEYsY_K5idRA" x="160" y="112"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0xrC9ccEeSEYsY_K5idRA" x="336" y="202"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_D0ySENccEeSEYsY_K5idRA" type="2001" fontName=".Helvetica Neue DeskInterface">
     <children xmi:type="notation:DecorationNode" xmi:id="_D0ySEtccEeSEYsY_K5idRA" type="5001"/>
@@ -66,7 +89,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0ySG9ccEeSEYsY_K5idRA"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//KnowledgeSource"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0ySEdccEeSEYsY_K5idRA" x="339" y="112"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0ySEdccEeSEYsY_K5idRA" x="515" y="202"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_D0ySHNccEeSEYsY_K5idRA" type="2001" fontName=".Helvetica Neue DeskInterface">
     <children xmi:type="notation:DecorationNode" xmi:id="_D0ySHtccEeSEYsY_K5idRA" type="5001"/>
@@ -83,7 +106,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0y5KNccEeSEYsY_K5idRA"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//Agent"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0ySHdccEeSEYsY_K5idRA" x="197" y="311"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0ySHdccEeSEYsY_K5idRA" x="373" y="401"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_D0y5KdccEeSEYsY_K5idRA" type="2001" fontName=".Helvetica Neue DeskInterface">
     <children xmi:type="notation:DecorationNode" xmi:id="_D0y5K9ccEeSEYsY_K5idRA" type="5001"/>
@@ -100,7 +123,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_D0y5NNccEeSEYsY_K5idRA"/>
     </children>
     <element xmi:type="ecore:EClass" href="MetaModel.ecore#//systemClass"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0y5KtccEeSEYsY_K5idRA" x="12" y="311"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D0y5KtccEeSEYsY_K5idRA" x="188" y="401"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_DyvDodccEeSEYsY_K5idRA"/>
   <element xmi:type="ecore:EPackage" href="MetaModel.ecore#/"/>
